@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Trà sữa trân châu đường đen",
+        "price": 50000,
+        "quantity": 15,
+        "imgUrl": "milktea01",
+        "teaSize": "M",
+        "sugar": 100,
+        "ice": 100,
+        "toppings": {}
+    },
+    {
+        "name": "Trà đào miếng",
+        "price": 45000,
+        "quantity": 10,
+        "imgUrl": "tea01",
+        "teaSize": "M",
+        "sugar": 100,
+        "ice": 100,
+        "toppings": {}
+    },
+    {
+        "name": "Trà olong trân châu đen",
+        "price": 40000,
+        "quantity": 25,
+        "imgUrl": "tea02",
+        "teaSize": "M",
+        "sugar": 100,
+        "ice": 100,
+        "toppings": {}
+    }
+]
