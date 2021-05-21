@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978336435487",
+    "project_id": "phuclongdemo",
+    "storage_bucket": "phuclongdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978336435487:android:103dee6c1c7cf1fcc5b42a",
+        "android_client_info": {
+          "package_name": "com.example.phuc_long_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978336435487-eqnus7i79b7coihdpq6l2tfsk4jugqhd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMQYEUxWdQVewLKxPrjM5TUvUyibS6L9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978336435487-eqnus7i79b7coihdpq6l2tfsk4jugqhd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
