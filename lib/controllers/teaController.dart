@@ -1,17 +1,53 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:phuc_long_demo/models/tea.dart';
+import 'package:phuc_long_demo/services/teaService.dart';
 
 class TeaController extends GetxController {
-  var teaList = <TeaModel>[].obs;
-
   @override
   void onInit() {
-    teaList.value = [
-      TeaModel(name: "Trà sữa trân châu đường đen", price: 50000, quantity: 15),
-      TeaModel(name: "Trà đào miếng", price: 35000, quantity: 22),
-      TeaModel(name: "Trà sữa matcha", price: 45000, quantity: 12),
-      TeaModel(name: "Trà sữa Caramel thạch cafe", price: 55000, quantity: 15),
-    ];
     super.onInit();
+  }
+
+  //  VARIABLES
+
+  var teaList = <TeaModel>[].obs;
+
+  CollectionReference menu = TeaService().menu;
+  Stream<QuerySnapshot> teaStream = TeaService().teaStream;
+
+  Map<String, dynamic> order = {
+    "quantity": 1,
+    "size": "S",
+    "sugar": 100,
+    "ice": 100,
+    "toppings": {
+      "black_pearl": 0,
+      "white_pearl": 0,
+      "fruit_jelly": 0,
+    },
+    "note": "",
+    "totalPrice": 0.0,
+  }.obs;
+
+  var totalPriceCart = 0.0.obs;
+  var totalQuantityCart = 0.obs;
+
+  //METHODS
+
+  void resetOrder() {
+    order = {
+      "quantity": 1,
+      "size": "S",
+      "sugar": 100,
+      "ice": 100,
+      "toppings": {
+        "black_pearl": 0,
+        "white_pearl": 0,
+        "fruit_jelly": 0,
+      },
+      "note": "",
+      "totalPrice": 0.0,
+    }.obs;
   }
 }
